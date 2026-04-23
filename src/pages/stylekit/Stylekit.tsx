@@ -37,15 +37,16 @@ function Stylekit() {
       </div>
     </div> */}
 
+      {/* Шрифты */}
       <div className={`${styles["all-fonts"]} sp-t-pink`}>
         <div className="container">
           <div className="col">
-            <h2 className="font-h2 sp-b-yellow">Fonts</h2>
+            <h2 className="font-h2 sp-b-purple">Fonts</h2>
             <div className={styles["all-fonts__wrapper"]}>
               <div className={styles["all-fonts__font"]}>
-                <h1 className="font-h1">Заголовок H1</h1>
+                <h1 className="font-h1">Title H1</h1>
                 <div
-                  className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "font-h1" ? styles.copied : ""}`}
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-h1" ? styles.copied : ""}`}
                   onClick={() => copyToClipboard("font-h1")}
                 >
                   {getButtonText("font-h1")}
@@ -53,9 +54,9 @@ function Stylekit() {
               </div>
 
               <div className={styles["all-fonts__font"]}>
-                <h1 className="font-h2">Заголовок Н2</h1>
+                <h2 className="font-h2">Title Н2</h2>
                 <div
-                  className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "font-h2" ? styles.copied : ""}`}
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-h2" ? styles.copied : ""}`}
                   onClick={() => copyToClipboard("font-h2")}
                 >
                   {getButtonText("font-h2")}
@@ -63,52 +64,62 @@ function Stylekit() {
               </div>
 
               <div className={styles["all-fonts__font"]}>
-                <h1 className="font-h3">Заголовок H3</h1>
+                <p className="font-s-l">Subtitle large</p>
                 <div
-                  className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "font-h3" ? styles.copied : ""}`}
-                  onClick={() => copyToClipboard("font-h3")}
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-s-l" ? styles.copied : ""}`}
+                  onClick={() => copyToClipboard("font-s-l")}
                 >
-                  {getButtonText("font-h3")}
+                  {getButtonText("font-s-l")}
                 </div>
               </div>
 
               <div className={styles["all-fonts__font"]}>
-                <h1 className="font-h4">Заголовок H4</h1>
+                <p className="font-s-m">Subtitle medium</p>
                 <div
-                  className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "font-h4" ? styles.copied : ""}`}
-                  onClick={() => copyToClipboard("font-h4")}
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-s-m" ? styles.copied : ""}`}
+                  onClick={() => copyToClipboard("font-s-m")}
                 >
-                  {getButtonText("font-h4")}
+                  {getButtonText("font-s-m")}
                 </div>
               </div>
 
               <div className={styles["all-fonts__font"]}>
-                <h1 className="font-s1">Подзаголовок Subtitle1</h1>
+                <p className="font-s-s">Subtitle small</p>
                 <div
-                  className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "font-s1" ? styles.copied : ""}`}
-                  onClick={() => copyToClipboard("font-s1")}
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-s-s" ? styles.copied : ""}`}
+                  onClick={() => copyToClipboard("font-s-s")}
                 >
-                  {getButtonText("font-s1")}
+                  {getButtonText("font-s-s")}
                 </div>
               </div>
 
               <div className={styles["all-fonts__font"]}>
-                <h1 className="font-t1">Текст Text1</h1>
+                <p className="font-t-l">Text large</p>
                 <div
-                  className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "font-t1" ? styles.copied : ""}`}
-                  onClick={() => copyToClipboard("font-t1")}
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-t-l" ? styles.copied : ""}`}
+                  onClick={() => copyToClipboard("font-t-l")}
                 >
-                  {getButtonText("font-t1")}
+                  {getButtonText("font-t-l")}
                 </div>
               </div>
 
               <div className={styles["all-fonts__font"]}>
-                <h1 className="font-c">Описание Caption</h1>
+                <p className="font-t-m">Text medium</p>
                 <div
-                  className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "font-c" ? styles.copied : ""}`}
-                  onClick={() => copyToClipboard("font-c")}
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-t-m" ? styles.copied : ""}`}
+                  onClick={() => copyToClipboard("font-t-m")}
                 >
-                  {getButtonText("font-c")}
+                  {getButtonText("font-t-m")}
+                </div>
+              </div>
+
+              <div className={styles["all-fonts__font"]}>
+                <p className="font-t-s">Text small</p>
+                <div
+                  className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "font-t-s" ? styles.copied : ""}`}
+                  onClick={() => copyToClipboard("font-t-s")}
+                >
+                  {getButtonText("font-t-s")}
                 </div>
               </div>
             </div>
@@ -116,10 +127,11 @@ function Stylekit() {
         </div>
       </div>
 
+      {/* Отступы */}
       <div className={`${styles["indentation-system"]} sp-v-pink`}>
         <div className="container">
           <div className="col">
-            <h2 className="font-h2 sp-b-yellow">Indentation system</h2>
+            <h2 className="font-h2 sp-b-purple">Indentation system</h2>
             <div className={styles["indentation-system__wrapper"]}>
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
@@ -190,9 +202,7 @@ function Stylekit() {
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
                   <div className={styles["indentation-system__box-blue"]}></div>
-                  <div className="font-b-l">
-                    12px/12px/8px
-                  </div>
+                  <div className="font-b-l">12px/12px/8px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -226,9 +236,7 @@ function Stylekit() {
                   <div
                     className={styles["indentation-system__box-lightblue"]}
                   ></div>
-                  <div className="font-b-l">
-                    16px/16px/12px
-                  </div>
+                  <div className="font-b-l">16px/16px/12px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -262,9 +270,7 @@ function Stylekit() {
                   <div
                     className={styles["indentation-system__box-yellow"]}
                   ></div>
-                  <div className="font-b-l">
-                    20px/20px/20px
-                  </div>
+                  <div className="font-b-l">20px/20px/20px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -298,9 +304,7 @@ function Stylekit() {
                   <div
                     className={styles["indentation-system__box-darkorange"]}
                   ></div>
-                  <div className="font-b-l">
-                    20px
-                  </div>
+                  <div className="font-b-l">20px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -334,9 +338,7 @@ function Stylekit() {
                   <div
                     className={styles["indentation-system__box-burgundy"]}
                   ></div>
-                  <div className="font-b-l">
-                    24px/24px/20px
-                  </div>
+                  <div className="font-b-l">24px/24px/20px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -368,9 +370,7 @@ function Stylekit() {
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
                   <div className={styles["indentation-system__box-red"]}></div>
-                  <div className="font-b-l">
-                    28px/28px/24px
-                  </div>
+                  <div className="font-b-l">28px/28px/24px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -402,9 +402,7 @@ function Stylekit() {
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
                   <div className={styles["indentation-system__box-mint"]}></div>
-                  <div className="font-b-l">
-                    32px/32px/28px
-                  </div>
+                  <div className="font-b-l">32px/32px/28px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -438,9 +436,7 @@ function Stylekit() {
                   <div
                     className={styles["indentation-system__box-purple"]}
                   ></div>
-                  <div className="font-b-l">
-                    40px/40px/32px
-                  </div>
+                  <div className="font-b-l">40px/40px/32px</div>
                   <div
                     className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
@@ -472,32 +468,30 @@ function Stylekit() {
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
                   <div
-                    className={styles["indentation-system__box-dark-blue"]}
+                    className={styles["indentation-system__box-darkblue"]}
                   ></div>
-                  <div className="font-b-l">
-                    48px
-                  </div>
+                  <div className="font-b-l">48px/40px/32px</div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__name"]}`}
+                    className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
-                    Dark blue
+                    darkblue
                   </div>
                 </div>
                 <div className={styles["indentation-system__button-block"]}>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-t-darkblue" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-t-darkblue" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-t-darkblue")}
                   >
-                    {getButtonText("sp-t-dark-blue")}
+                    {getButtonText("sp-t-darkblue")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-b-darkblue" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-b-darkblue" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-b-darkblue")}
                   >
-                    {getButtonText("sp-b-dark-blue")}
+                    {getButtonText("sp-b-darkblue")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-v-darkblue" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-v-darkblue" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-v-darkblue")}
                   >
                     {getButtonText("sp-v-darkblue")}
@@ -508,68 +502,30 @@ function Stylekit() {
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
                   <div
-                    className={styles["indentation-system__box-opacity-green"]}
-                  ></div>
-                  <div className="font-b-l">
-                    64px
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__name"]}`}
-                  >
-                    Opacity green
-                  </div>
-                </div>
-                <div className={styles["indentation-system__button-block"]}>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-t-opacity-green" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-t-opacity-green")}
-                  >
-                    {getButtonText("sp-t-opacity-green")}
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-b-opacity-green" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-b-opacity-green")}
-                  >
-                    {getButtonText("sp-b-opacity-green")}
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-v-opacity-green" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-v-opacity-green")}
-                  >
-                    {getButtonText("sp-v-opacity-green")}
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles["indentation-system__padding-colors"]}>
-                <div className={styles["indentation-system__color-block"]}>
-                  <div
                     className={styles["indentation-system__box-green"]}
                   ></div>
-                  <div className="font-b-l">
-                    64px
-                  </div>
+                  <div className="font-b-l">64px/48px/40px</div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__name"]}`}
+                    className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
-                    Green
+                    green
                   </div>
                 </div>
                 <div className={styles["indentation-system__button-block"]}>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-t-green" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-t-green" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-t-green")}
                   >
                     {getButtonText("sp-t-green")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-b-green" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-b-green" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-b-green")}
                   >
                     {getButtonText("sp-b-green")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-v-green" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-v-green" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-v-green")}
                   >
                     {getButtonText("sp-v-green")}
@@ -580,102 +536,30 @@ function Stylekit() {
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
                   <div
-                    className={styles["indentation-system__box-fuchsia"]}
-                  ></div>
-                  <div className="font-b-l">
-                    80px
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__name"]}`}
-                  >
-                    Fuchsia
-                  </div>
-                </div>
-                <div className={styles["indentation-system__button-block"]}>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-t-fuchsia" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-t-fuchsia")}
-                  >
-                    {getButtonText("sp-t-fuchsia")}
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-b-fuchsia" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-b-fuchsia")}
-                  >
-                    {getButtonText("sp-b-fuchsia")}
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-v-fuchsia" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-v-fuchsia")}
-                  >
-                    {getButtonText("sp-v-fuchsia")}
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles["indentation-system__padding-colors"]}>
-                <div className={styles["indentation-system__color-block"]}>
-                  <div className={styles["indentation-system__box-pink"]}></div>
-                  <div className="font-b-l">
-                    100px
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__name"]}`}
-                  >
-                    Pink
-                  </div>
-                </div>
-                <div className={styles["indentation-system__button-block"]}>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-t-pink" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-t-pink")}
-                  >
-                    {getButtonText("sp-t-pink")}
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-b-pink" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-b-pink")}
-                  >
-                    {getButtonText("sp-b-pink")}
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-v-pink" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-v-pink")}
-                  >
-                    {getButtonText("sp-v-pink")}
-                  </div>
-                </div>
-              </div>
-
-              <div className={styles["indentation-system__padding-colors"]}>
-                <div className={styles["indentation-system__color-block"]}>
-                  <div
                     className={styles["indentation-system__box-orange"]}
                   ></div>
-                  <div className="font-b-l">
-                    150px
-                  </div>
+                  <div className="font-b-l">80px/64px/40px</div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__name"]}`}
+                    className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
-                    Orange
+                    orange
                   </div>
                 </div>
                 <div className={styles["indentation-system__button-block"]}>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-t-orange" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-t-orange" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-t-orange")}
                   >
                     {getButtonText("sp-t-orange")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-b-orange" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-b-orange" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-b-orange")}
                   >
                     {getButtonText("sp-b-orange")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-v-orange" ? styles.copied : ""}`}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-v-orange" ? styles.copied : ""}`}
                     onClick={() => copyToClipboard("sp-v-orange")}
                   >
                     {getButtonText("sp-v-orange")}
@@ -685,36 +569,64 @@ function Stylekit() {
 
               <div className={styles["indentation-system__padding-colors"]}>
                 <div className={styles["indentation-system__color-block"]}>
+                  <div className={styles["indentation-system__box-pink"]}></div>
+                  <div className="font-b-l">100px/80px/64px</div>
                   <div
-                    className={styles["indentation-system__box-pastel"]}
-                  ></div>
-                  <div className="font-b-l">
-                    200px
-                  </div>
-                  <div
-                    className={`font-t1 ${styles["indentation-system__name"]}`}
+                    className={`font-b-l ${styles["indentation-system__name"]}`}
                   >
-                    Pastel
+                    pink
                   </div>
                 </div>
                 <div className={styles["indentation-system__button-block"]}>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-t-pastel" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-t-pastel")}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-t-pink" ? styles.copied : ""}`}
+                    onClick={() => copyToClipboard("sp-t-pink")}
                   >
-                    {getButtonText("sp-t-pastel")}
+                    {getButtonText("sp-t-pink")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-b-pastel" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-b-pastel")}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-b-pink" ? styles.copied : ""}`}
+                    onClick={() => copyToClipboard("sp-b-pink")}
                   >
-                    {getButtonText("sp-b-pastel")}
+                    {getButtonText("sp-b-pink")}
                   </div>
                   <div
-                    className={`font-t1 ${styles["indentation-system__class"]} ${copiedClass === "sp-v-pastel" ? styles.copied : ""}`}
-                    onClick={() => copyToClipboard("sp-v-pastel")}
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-v-pink" ? styles.copied : ""}`}
+                    onClick={() => copyToClipboard("sp-v-pink")}
                   >
-                    {getButtonText("sp-v-pastel")}
+                    {getButtonText("sp-v-pink")}
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles["indentation-system__padding-colors"]}>
+                <div className={styles["indentation-system__color-block"]}>
+                  <div className={styles["indentation-system__box-wine"]}></div>
+                  <div className="font-b-l">120px/100px/80px</div>
+                  <div
+                    className={`font-b-l ${styles["indentation-system__name"]}`}
+                  >
+                    wine
+                  </div>
+                </div>
+                <div className={styles["indentation-system__button-block"]}>
+                  <div
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-t-wine" ? styles.copied : ""}`}
+                    onClick={() => copyToClipboard("sp-t-wine")}
+                  >
+                    {getButtonText("sp-t-wine")}
+                  </div>
+                  <div
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-b-wine" ? styles.copied : ""}`}
+                    onClick={() => copyToClipboard("sp-b-wine")}
+                  >
+                    {getButtonText("sp-b-wine")}
+                  </div>
+                  <div
+                    className={`font-b-l ${styles["indentation-system__class"]} ${copiedClass === "sp-v-wine" ? styles.copied : ""}`}
+                    onClick={() => copyToClipboard("sp-v-wine")}
+                  >
+                    {getButtonText("sp-v-wine")}
                   </div>
                 </div>
               </div>
